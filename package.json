@@ -11,9 +11,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dist": "npm-run-all dist:clean dist:build",
+    "dist": "npm-run-all dist:clean dist:build dist:copy",
     "dist:build": "tsc -p tsconfig.dist.json",
     "dist:clean": "rm -rf dist",
+    "dist:copy": "cp src/matchers.d.ts dist/matchers.d.ts",
     "doc": "typedoc --mode file --excludeNotExported --out docs/api src",
     "lint": "tslint -p . -t verbose && tslint -p . -c node_modules/@myowncake/config-tslint/dist/tslint.no-unused-variable.json -t verbose",
     "test": "npm run testx -- 'spec/**/*.spec.ts'",

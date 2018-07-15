@@ -1,4 +1,4 @@
 /// <reference types="jasmine" />
-export declare const detailedErrorMatcherFactories: {
-    toThrowDetailedError: (util: jasmine.MatchersUtil, customEqualityTesters: jasmine.CustomEqualityTester[]) => jasmine.CustomMatcher;
+export declare const fileTreeMatcherFactories: {
+    toHaveFiles: (util: jasmine.MatchersUtil, customEqualityTesters: jasmine.CustomEqualityTester[]) => jasmine.CustomMatcher;
 };
