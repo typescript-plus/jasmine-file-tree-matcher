@@ -1,6 +1,6 @@
 {
   "name": "@typescript-plus/jasmine-file-tree-matcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Jasmine matcher for testing if two file trees are identical.",
   "repository": "typescript-plus/jasmine-file-tree-matcher",
   "license": "MIT",

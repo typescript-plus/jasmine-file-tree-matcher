@@ -27,8 +27,7 @@ var MATCHER = {
                 };
             case 1:
                 return {
-                    message: "Diff:\n" + result.stdout
-                        .toString()
+                    message: "Diff:\n" + (result.stdout.toString() + result.stderr.toString())
                         .split('\n')
                         .map(function (e) { return "  " + e; })
                         .join('\n'),
