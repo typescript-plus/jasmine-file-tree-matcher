@@ -23,8 +23,7 @@ const MATCHER: jasmine.CustomMatcher = {
         };
       case 1:
         return {
-          message: `Diff:\n${result.stdout
-            .toString()
+          message: `Diff:\n${(result.stdout.toString() + result.stderr.toString())
             .split('\n')
             .map(e => `  ${e}`)
             .join('\n')}`,
